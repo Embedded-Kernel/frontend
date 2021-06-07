@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import StudentCardList from "../components/StudentCardList";
-import LoginPage from "./LoginPage";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <main>
-     <StudentCardList/>
+        <StudentCardList />
       </main>
     </Fragment>
   );
