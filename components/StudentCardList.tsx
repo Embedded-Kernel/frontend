@@ -20,7 +20,7 @@ export default function StudentCardList() {
 
           <div className="bg-white rounded my-6 mt-3">
             <table className=" divide-y divide-gray-200 min-w-max w-full table-auto">
-              <thead className="bg-gray-50">
+              <thead className="bg-gray-100">
                 <tr>
                   <th
                     scope="col"
@@ -77,7 +77,7 @@ export default function StudentCardList() {
               </thead>
               <tbody className="bg-white w-4/5">
                 {peoples.map((person) => (
-                  <tr className="hover:bg-gray-300">
+                  <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="ml-1">
