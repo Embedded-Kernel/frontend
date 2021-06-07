@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import StudentCardList from "../components/StudentCardList";
+import LoginPage from "./LoginPage";
 
 export default function Home() {
   return (
@@ -8,7 +10,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <main>
-        <h1 className="text-6xl text-center">Hello from embeded Kernel</h1>
+     <StudentCardList/>
       </main>
     </Fragment>
   );
