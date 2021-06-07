@@ -2,10 +2,17 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    //
+    extend: {
+      backgroundColor: {
+        sideBarColor : '#2D2D2F'
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [],
 };
