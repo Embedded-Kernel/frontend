@@ -1,0 +1,23 @@
+/* Admin Sidebar */
+.sidebar {
+  max-width: 20%;
+  background: #2d2d2f;
+  font-weight: 700;
+}
+nav a:hover {
+  color: #ebd614;
+  border-left: 3px solid #ebd614;
+}
+nav a span {
+  padding-left: 15px;
+}
+nav hr {
+  color: #6c63ff;
+  position: absolute;
+  width: 175px;
+  height: 0px;
+  left: 10px;
+  top: 550px;
+  border: 1px solid rgba(108, 99, 255, 0.46);
+  transform: rotate(-0.3deg);
+}
