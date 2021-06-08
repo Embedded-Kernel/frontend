@@ -1,8 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
+import MetaData from "./MetaData"
 import { peoples } from "./dataSource/cardList";
 
 export default function StudentCardList() {
   return (
+      <Fragment>
+          <MetaData title={'Students List'} />
     <div className="overflow-hidden">
       <div className="min-w-screen  flex items-center justify-center overflow-hidden">
         <div className="w-full lg:w-5/6 ml-44 shadow-md mb-5 py-3 mt-8">
@@ -160,5 +163,6 @@ export default function StudentCardList() {
         </div>
       </div>
     </div>
+    </Fragment>
   );
 }
