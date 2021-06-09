@@ -1,10 +1,10 @@
 import React from 'react';
-import { RiDashboardLine} from 'react-icons/ri';
-import { MdContactMail,MdTimeline} from 'react-icons/md';
-import { AiOutlineCreditCard} from 'react-icons/ai';
-import { RiAccountBoxLine,RiArrowLeftRightFill} from 'react-icons/ri';
+import {RiAccountBoxLine, RiArrowLeftRightFill, RiDashboardLine} from 'react-icons/ri';
+import {MdContactMail, MdTimeline} from 'react-icons/md';
+import {AiOutlineCreditCard} from 'react-icons/ai';
 import Link from 'next/link';
- const SideBar = () => {
+
+const SideBar = () => {
     return (
         <div className="relative">
   <div className="sidebar text-blue-100 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
