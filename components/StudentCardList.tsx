@@ -1,15 +1,24 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import MetaData from "./MetaData"
 import { peoples } from "./dataSource/cardList";
+import {ViewStudent} from "../components/modals/ViewStudent"
 
 export default function StudentCardList() {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+      setShowModal(prev => !prev);
+    };
   return (
       <Fragment>
           <MetaData title={'Students List'} />
     <div className="overflow-hidden">
       <div className="min-w-screen  flex items-center justify-center overflow-hidden">
-        <div className="students ml-37 mr-5 w-full shadow-md mb-5 py-3 mt-8">
-        <div className="w-full lg:w-5/6 ml-44 shadow-md mb-5 py-3 mt-3">
+
+        <div className="students w-full mr-5 mb-5 py-3 -mt-4">
+
+        <div className="ml-60 mr-1 shadow-md mb-5 py-3 mt-6">
+
           <div className="px-6 py-2 text-lg font-medium text-gray-900 flex">
             <h1 className="mt-2 uppercase font-sans">Student Cards</h1>
             <span className="py-3 px-2 text-sm text-gray-300">120</span>
@@ -158,14 +167,17 @@ export default function StudentCardList() {
                       <a
                         href="#"
                         className="px-2 py-2 text-gray-600 shadow hover:text-indigo-900 "
-                      >
+                        onClick={openModal}>
                         View more
                       </a>
                     </td>
+               
                   </tr>
+                
                 ))}
               </tbody>
             </table>
+            <ViewStudent showModal={showModal} setShowModal={setShowModal} />
           </div>
         </div>
       </div>
