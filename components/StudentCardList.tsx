@@ -15,7 +15,7 @@ export default function StudentCardList() {
     <div className="overflow-hidden">
       <div className="min-w-screen  flex items-center justify-center overflow-hidden">
 
-        <div className="students w-full ml-50 mr-5 mb-5 py-3 mt-0">
+        <div className="students w-full ml-50 mr-5 mb-5 py-3 -mt-4">
 
         <div className="ml-60 shadow-md mb-5 py-3 mt-6">
 
