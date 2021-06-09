@@ -14,7 +14,11 @@ export default function StudentCardList() {
           <MetaData title={'Students List'} />
     <div className="overflow-hidden">
       <div className="min-w-screen  flex items-center justify-center overflow-hidden">
-        <div className="w-full lg:w-5/6 ml-44 shadow-md mb-5 py-3 mt-3">
+
+        <div className="students w-full ml-50 mr-5 mb-5 py-3 mt-6">
+
+        <div className="ml-60 shadow-md mb-5 py-3 mt-6">
+
           <div className="px-6 py-2 text-lg font-medium text-gray-900 flex">
             <h1 className="mt-2 uppercase font-sans">Student Cards</h1>
             <span className="py-3 px-2 text-sm text-gray-300">120</span>
@@ -177,6 +181,7 @@ export default function StudentCardList() {
           </div>
         </div>
       </div>
+    </div>
     </div>
     </Fragment>
   );
