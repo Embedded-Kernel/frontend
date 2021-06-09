@@ -25,5 +25,6 @@ nav hr {
 }
 /* student's list component design */
 div.students {
+  width:95%;
   float: right;
 }
