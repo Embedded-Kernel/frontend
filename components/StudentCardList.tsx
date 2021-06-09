@@ -8,7 +8,7 @@ export default function StudentCardList() {
           <MetaData title={'Students List'} />
     <div className="overflow-hidden">
       <div className="min-w-screen  flex items-center justify-center overflow-hidden">
-        <div className="w-full lg:w-5/6 ml-44 shadow-md mb-5 py-3 mt-8">
+        <div className="students ml-60 mr-5 w-full shadow-md mb-5 py-3 mt-8">
           <div className="px-6 py-2 text-lg font-medium text-gray-900 flex">
             <h1>Student Cards</h1>
             <span className="px-2 py-2 text-sm text-gray-500">120</span>

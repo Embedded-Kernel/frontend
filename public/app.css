@@ -1,8 +1,10 @@
 /* Admin Sidebar */
 .sidebar {
+  float: left;
   width: 17%;
   background: #2d2d2f;
   font-weight: 700;
+  position: fixed;
 }
 nav a:hover {
   color: #ebd614;
@@ -20,4 +22,8 @@ nav hr {
   top: 550px;
   border: 1px solid rgba(108, 99, 255, 0.46);
   transform: rotate(-0.3deg);
+}
+/* student's list component design */
+div.students {
+  float: right;
 }
