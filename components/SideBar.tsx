@@ -6,7 +6,7 @@ import { RiAccountBoxLine,RiArrowLeftRightFill} from 'react-icons/ri';
 import Link from 'next/link';
  const SideBar = () => {
     return (
-        <div className="relative min-h-screen md:flex">
+        <div className="relative">
   <div className="sidebar text-blue-100 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
     <a href="/dashboard" className="mt-5 text-white flex items-center space-x-2 px-10">
       <span className="text-2xl font-extrabold">Smart SC</span>
