@@ -9,12 +9,11 @@
       <change afterPath="$PROJECT_DIR$/components/dataSource/cardList.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pages/accountInfoPage.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
@@ -79,7 +78,7 @@
       <updated>1623066355185</updated>
       <workItem from="1623066359551" duration="10647000" />
       <workItem from="1623132209223" duration="33965000" />
-      <workItem from="1623219039158" duration="5560000" />
+      <workItem from="1623219039158" duration="9345000" />
     </task>
     <task id="LOCAL-00001" summary="added the button and landing page components">
       <created>1623083061149</created>

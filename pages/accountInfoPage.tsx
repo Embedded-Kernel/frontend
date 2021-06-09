@@ -1,13 +1,14 @@
 import React from "react"
 import Image from 'next/image'
+import SideBar from "../components/SideBar"
 
 const accountInfoPage = () => {
     return (
         <div className="font-sans container grid grid-cols-12">
-            <div className="col-span-3 h-screen  bg-yellow-400">
-                {/*<SideBar/>*/}
+            <div className="col-span-2 w-full h-screen  bg-blue-400">
+                <SideBar/>
             </div>
-            <div className="col-span-9">
+            <div className="col-span-10">
                 <div className="h-10">
                     <p className="mx-auto font-bold p-10 text-lg">Account</p>
                 </div>
