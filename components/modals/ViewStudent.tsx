@@ -63,7 +63,9 @@ export const  ViewStudent = ({showModal, setShowModal}) => {
         
         </div>
         <div >
-            <button className="bg-gray-900 flex justify-center  ml-44 items-center w-28 text-white px-4 py-2 rounded-md focus:outline-none">Done</button>
+            <button className="bg-gray-900 flex justify-center  ml-44 items-center w-28 text-white px-4 py-2 rounded-md focus:outline-none" 
+            onClick={() => setShowModal((prev: any) => !prev)}
+            >Done</button>
         </div>
       </div>
     </div>
