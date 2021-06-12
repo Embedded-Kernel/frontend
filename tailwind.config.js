@@ -7,6 +7,9 @@ module.exports = {
       backgroundColor: {
         sideBarColor : '#2D2D2F'
       },
+      fontFamily: {
+        'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+      }
     },
   },
   variants: {
