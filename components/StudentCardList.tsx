@@ -3,11 +3,13 @@ import MetaData from "./MetaData";
 import { data } from "./TableComponents/mockData";
 import { tableConstants } from "./TableComponents/TableConstants";
 import Table from "./TableComponents/Table";
+import SideBar from "./SideBar";
 
 export default function StudentCardList() {
   return (
     <Fragment>
       <MetaData title={"Students List"} />
+      <SideBar />
       <div className="overflow-hidden">
         <div className="min-w-screen  flex items-center justify-center overflow-hidden">
           <div className="students w-full ml-50 mr-5 mb-5 py-3 -mt-4">
