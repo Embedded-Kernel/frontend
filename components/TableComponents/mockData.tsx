@@ -1,4 +1,4 @@
-export const peoples = [
+export const data = [
     {
         name: "Makuza Mugabo",
         cardno: "RCA0114MHB",

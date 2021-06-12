@@ -6,9 +6,8 @@ export default function Home() {
     return (
         <Fragment>
             <main>
+            <SideBar />
             <StudentCardList />
-                <SideBar />
-        
             </main>
         </Fragment>
     );

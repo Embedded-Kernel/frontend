@@ -1,18 +1,15 @@
 import React from "react";
 // import "./style.css"
-
-
-
-export const  ViewStudent = ({showModal, setShowModal}) => {
+export const  ViewStudent = ({showModal, setShowModal} : any) => {
 
 
   return (
 <>
  {showModal ? (
 
-<div className=" min-h-screen py-16 px-10 absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0  flex flex-col items-center justify-center  sm:py-12">
-<div className="relative py-4   px-20 w-3/4">
-  <div className="relative px-10 py-8 bg-white  mx-8 md:mx-0 shadow-md rounded-md sm:p-10">
+<div className=" min-h-screen py-16 px-10  fixed inset-0 bg-black bg-opacity-5  w-full flex justify-center items-start md:items-center pt-10 md:pt-0  flex-col items-center">
+<div className=" px-20 w-3/4">
+  <div className="relative px-10 py-8 bg-white   mx-8 md:mx-0  rounded-md sm:p-10">
     <div className="max-w-md mx-auto">
       <div className="flex items-center space-x-5">
         <div className="block pl-2 font-bold text-xl text-gray-900">
