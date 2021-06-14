@@ -1,10 +1,5 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
-const MetaData = ({title} : any) => {
-    return (
-        <Helmet>
-            <title>{`${title} | Embedded Kernel`}</title>
-        </Helmet>
-    )
-}
-export default MetaData
+import React from "react";
+const MetaData = ({ title }: any) => {
+  return <title>{`${title} | Embedded Kernel`}</title>;
+};
+export default MetaData;
