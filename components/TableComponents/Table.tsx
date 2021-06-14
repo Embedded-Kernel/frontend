@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import TablePaginationDemo from "../dataSource/tablePagination";
 
 const Table = ({cols,data} : any) => {
     return(
@@ -22,6 +23,7 @@ const Table = ({cols,data} : any) => {
 
              ))}
          </tbody>
+      
     </table>
     )
 }

@@ -11,7 +11,7 @@ export const tableConstants = () => {
     {
       title: "Holder",
       render: (rowData: any) => {
-        return <span>{rowData.name}</span>;
+        return <span>{rowData.holder}</span>;
       },
     },
     {
