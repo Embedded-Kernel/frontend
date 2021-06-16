@@ -1,12 +1,18 @@
 import React, { Fragment } from "react";
+import { useState } from "react";
 import Dropdown from "./Layouts/Dropdown";
 import MetaData from "./MetaData";
+import { NewTransaction } from "./modals/newTransaction";
 import SideBar from "./SideBar";
 import Table from "./TableComponents/Table";
 import { transaction } from "./TableComponents/transactData";
 import { tableTConstants } from "./TableComponents/TransactListConsts";
 
-export default  function TransactionsList(){
+export   const TransactionsList =() =>{
+  const [showModal, setShowModal] = useState(false);
+const openModal = () => {
+  setShowModal((prev) => !prev);
+};
     return(
         <Fragment>
             <MetaData title={"Transactions List"}/>
@@ -45,11 +51,13 @@ export default  function TransactionsList(){
                 </div>
                 <div className="ml-72">
                          
-                <button className="inline-flex bg-sideBarColor justify-center px-6  mr-6 rounded-md border border-gray-300  py-2 text-sm font-medium text-white  focus:outline-none">New Transaction</button>
+                <button className="inline-flex bg-sideBarColor justify-center px-6  mr-6 rounded-md border border-gray-300  py-2 text-sm font-medium text-white  focus:outline-none"  onClick={openModal}>New Transaction</button>
+                <NewTransaction showModal={showModal} setShowModal={setShowModal} />
                 <Dropdown/>
                    {/* <DatePickerPage/>  */}
              
                     </div>
+                    
               </div>
              
               
@@ -57,7 +65,7 @@ export default  function TransactionsList(){
 
               <div className="bg-white rounded my-6 mt-3">
                 <Table cols={ tableTConstants()} data={transaction} />
-                {/* <div className=""><TablePaginationDemo/></div> */}
+
          
               </div>
             </div>

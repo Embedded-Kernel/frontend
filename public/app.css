@@ -6,6 +6,12 @@
   font-weight: 700;
   position: fixed;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
 nav a:hover {
   color: #ebd614;
   border-left: 3px solid #ebd614;
