@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { useState } from "react";
 import Dropdown from "./Layouts/Dropdown";
 import MetaData from "./MetaData";
-import { NewTransaction } from "./modals/newTransaction";
+import { NewTransaction } from "./modals/NewTransaction";
 import SideBar from "./SideBar";
 import Table from "./TableComponents/Table";
 import { transaction } from "./TableComponents/transactData";
