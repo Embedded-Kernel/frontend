@@ -54,7 +54,7 @@ export default function ConfirmCode() {
          <div className="flex block items-center justify-center mt-12">
          <h1 className="text-4xl font-bold font-sans confirm">Confirmation Code</h1>
          <p className="text-sm text-gray-400">Please, before you continue creating account,enter the confirmation code from admin.</p>
-        {/* <ReactCodeInput className="block"/> */}
+        <ReactCodeInput className="block"/>
          </div>
         
      
