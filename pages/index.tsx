@@ -13,10 +13,10 @@ export default function Home() {
       <main>
         <Router>
       <Switch>
-              {/* <Route exact path='/' component={SignUpPage}></Route>
+              <Route exact path='/' component={SignUpPage}></Route>
               <Route exact path='/transaction' component={TransactionsList}></Route>
-              <Route exact path='/cards' component={StudentCardList}></Route> */}
-              <Route exact path='/' component={ConfirmCode}></Route>
+              <Route exact path='/cards' component={StudentCardList}></Route>
+              <Route exact path='/code' component={ConfirmCode}></Route>
             </Switch>
 
 </Router>
