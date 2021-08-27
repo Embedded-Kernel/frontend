@@ -26,7 +26,7 @@ const SideBar = () => {
       </Link>
       <Link href="/cards">
       <a className="block mt-1 group flex items-center py-2.5 px-7  transition duration-200">
-      <AiOutlineCreditCard /><span>Cards</span>
+      <AiOutlineCreditCard /><span>Cards check</span>
       </a>
       </Link>
       <Link href="/reports">
