@@ -5,10 +5,13 @@ module.exports = {
     //
     extend: {
       backgroundColor: {
-        sideBarColor : '#2D2D2F'
+        sideBarColor : '#2D2D2F',
+      },
+      textColor: {
+        yellowColor: '#F5DD01', 
       },
       fontFamily: {
-        'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+        'poppins': ['Poppins'],
       }
     },
   },

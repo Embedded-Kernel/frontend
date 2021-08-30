@@ -1,7 +1,7 @@
 const HomeSidebar = (props: Record<string, string>) => {
     return (
-        <div className="col-span-4 flex flex-col gap-y-4 bg-sideBarColor h-screen">
-            <p className="text-white font-[semi-bold] mt-24 text-center text-4xl">Smart SC</p>
+        <div className="col-span-4 flex flex-col gap-y-28 bg-sideBarColor h-screen">
+            <p className="text-white font-[semi-bold] mt-10 ml-10 text-4xl">S<span className="text-yellowColor">s</span>c</p>
 
             <svg width="338" height="237" viewBox="0 0 338 237" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
@@ -49,7 +49,7 @@ const HomeSidebar = (props: Record<string, string>) => {
                     </clipPath>
                 </defs>
             </svg>
-            <p className="text-white mx-auto w-40">A powerful, yet easy -to-use application for managing students’ information anywhere</p>
+            <p className="text-white text-center text-sm w-100">A powerful, yet easy -to-use application for managing students’ information anywhere</p>
         </div>
     )
 }
