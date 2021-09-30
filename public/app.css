@@ -1,4 +1,7 @@
 /* Admin Sidebar */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .sidebar {
   float: left;
   width: 17%;
@@ -12,23 +15,23 @@
 }
 
 
-nav a:hover {
-  color: #ebd614;
-  border-left: 3px solid #ebd614;
-}
-nav a span {
-  padding-left: 15px;
-}
-nav hr {
-  color: #6c63ff;
-  position: absolute;
-  width: 190px;
-  height: 0px;
-  left: 10px;
-  top: 550px;
-  border: 1px solid rgba(108, 99, 255, 0.46);
-  transform: rotate(-0.3deg);
-}
+/* nav a:hover { */
+/*   color: #ebd614; */
+/*   border-left: 3px solid #ebd614; */
+/* } */
+/* nav a span { */
+/*   padding-left: 15px; */
+/* } */
+/* nav hr { */
+/*   color: #6c63ff; */
+/*   position: absolute; */
+/*   width: 190px; */
+/*   height: 0px; */
+/*   left: 10px; */
+/*   top: 550px; */
+/*   border: 1px solid rgba(108, 99, 255, 0.46); */
+/*   transform: rotate(-0.3deg); */
+/* } */
 /* student's list component design */
 div.students {
   float: right;
