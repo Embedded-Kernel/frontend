@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import MetaData from './MetaData';
 import { data } from './TableComponents/mockData';
-import { tableConstants } from './TableComponents/StudListConstants';
+import { TableConstants } from './TableComponents/StudListConstants';
 import Table from './TableComponents/Table';
 import SideBar from './SideBar';
 
@@ -38,9 +38,9 @@ export default function StudentCardList() {
                 </div>
               </div>
 
-              <div className="bg-white rounded my-6 mt-3">
-                <Table cols={tableConstants()} data={data} />
-              </div>
+              {/* <div className="bg-white rounded my-6 mt-3"> */}
+              {/*   <Table cols={<TableConstants />} data={data} /> */}
+              {/* </div> */}
             </div>
           </div>
         </div>

@@ -4,9 +4,9 @@ import Dropdown from './Layouts/Dropdown';
 import MetaData from './MetaData';
 import { NewTransaction } from './modals/NewTransaction';
 import SideBar from './SideBar';
-import Table from './TableComponents/Table';
-import { transaction } from './TableComponents/transactData';
-import { tableTConstants } from './TableComponents/TransactListConsts';
+/* import Table from './TableComponents/Table'; */
+/* import { transaction } from './TableComponents/transactData'; */
+/* import { tableTConstants } from './TableComponents/TransactListConsts'; */
 
 export const TransactionsList = () => {
   const [showModal, setShowModal] = useState(false);
@@ -55,9 +55,9 @@ export const TransactionsList = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded my-6 mt-3">
-                <Table cols={tableTConstants()} data={transaction} />
-              </div>
+              {/* <div className="bg-white rounded my-6 mt-3"> */}
+              {/*   <Table cols={tableTConstants()} data={transaction} /> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -65,4 +65,3 @@ export const TransactionsList = () => {
     </Fragment>
   );
 };
-

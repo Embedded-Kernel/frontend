@@ -22,11 +22,12 @@ const SignUpPage = () => {
             <div className="flex flex-col gap-y-10 w-2/4">
               <div className="flex gap-x-4">
                 <Image src="/assets/images/si-user.svg" alt="profile icon" width={20} height={20} />
-                <Input type={'text'} placeholder={'Email address or user name'} />
+                {/* <Input placeholder={'Email address or user name'} /> */}
               </div>
               <div className="flex gap-x-4">
                 <Image src="/assets/images/si-user.svg" alt="profile icon" width={20} height={20} />
-                <Input type={'text'} placeholder={'Password'} />
+
+                {/* <Input placeholder={'Password'} /> */}
               </div>
               <p className="ml-56">Forgot your password?</p>
               <div className="flex flex-row gap-x-2 items-center">
