@@ -1,36 +1,30 @@
-import React, { Fragment } from "react";
-import { useState } from "react";
-import Dropdown from "./Layouts/Dropdown";
-import MetaData from "./MetaData";
-import { NewTransaction } from "./modals/NewTransaction";
-import SideBar from "./SideBar";
-import Table from "./TableComponents/Table";
-import { transaction } from "./TableComponents/transactData";
-import { tableTConstants } from "./TableComponents/TransactListConsts";
+import React, { Fragment } from 'react';
+import { useState } from 'react';
+import Dropdown from './Layouts/Dropdown';
+import MetaData from './MetaData';
+import { NewTransaction } from './modals/NewTransaction';
+import SideBar from './SideBar';
+import Table from './TableComponents/Table';
+import { transaction } from './TableComponents/transactData';
+import { tableTConstants } from './TableComponents/TransactListConsts';
 
-export   const TransactionsList =() =>{
+export const TransactionsList = () => {
   const [showModal, setShowModal] = useState(false);
-const openModal = () => {
-  setShowModal((prev) => !prev);
-};
-    return(
-        <Fragment>
-            <MetaData title={"Transactions List"}/>
-            <SideBar/>
-            <div className="overflow-hidden">
+  const openModal = () => {
+    setShowModal((prev) => !prev);
+  };
+  return (
+    <Fragment>
+      <MetaData title={'Transactions List'} />
+      <SideBar />
+      <div className="overflow-hidden">
         <div className="min-w-screen  flex items-center justify-center overflow-hidden">
           <div className="students w-full ml-50 mr-5 mb-5 py-3 -mt-4">
             <div className="ml-60 shadow-md mb-5 py-3 mt-6">
               <div className="px-6 py-2 text-lg font-medium text-gray-900 flex">
                 <h1 className="mt-2 uppercase font-sans">Transactions</h1>
                 <div className="ml-16 items-left mt-auto flex">
-                  <svg
-                    width="24"
-                    height="23"
-                    viewBox="0 0 24 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="search_24px">
                       <path
                         id="icon/action/search_24px"
@@ -47,31 +41,28 @@ const openModal = () => {
                     placeholder="Search transactions..."
                     className="px-3 text-grey-darkest text-sm   italic focus:outline-none  "
                   />
-                 
                 </div>
                 <div className="ml-72">
-                         
-                <button className="inline-flex bg-sideBarColor justify-center px-6  mr-6 rounded-md border border-gray-300  py-2 text-sm font-medium text-white  focus:outline-none"  onClick={openModal}>New Transaction</button>
-                <NewTransaction showModal={showModal} setShowModal={setShowModal} />
-                <Dropdown/>
-                   {/* <DatePickerPage/>  */}
-             
-                    </div>
-                    
+                  <button
+                    className="inline-flex bg-sideBarColor justify-center px-6  mr-6 rounded-md border border-gray-300  py-2 text-sm font-medium text-white  focus:outline-none"
+                    onClick={openModal}
+                  >
+                    New Transaction
+                  </button>
+                  <NewTransaction showModal={showModal} setShowModal={setShowModal} />
+                  <Dropdown />
+                  {/* <DatePickerPage/>  */}
+                </div>
               </div>
-             
-              
-         
 
               <div className="bg-white rounded my-6 mt-3">
-                <Table cols={ tableTConstants()} data={transaction} />
-
-         
+                <Table cols={tableTConstants()} data={transaction} />
               </div>
             </div>
           </div>
         </div>
       </div>
-        </Fragment>
-    )
-}
+    </Fragment>
+  );
+};
+

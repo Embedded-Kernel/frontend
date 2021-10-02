@@ -1,45 +1,45 @@
-import React from "react";
-import { useState } from "react";
-import { ViewStudent } from "../modals/ViewStudent";
+import React from 'react';
+import { useState } from 'react';
+import { ViewStudent } from '../modals/ViewStudent';
 
-export const tableConstants = () => {
+export const TableConstants = () => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
     setShowModal((prev) => !prev);
   };
   return [
     {
-      title: "Holder",
+      title: 'Holder',
       render: (rowData: any) => {
         return <span>{rowData.holder}</span>;
       },
     },
     {
-      title: "Card No",
+      title: 'Card No',
       render: (rowData: any) => {
         return <span>{rowData.cardno}</span>;
       },
     },
     {
-      title: "Balance",
+      title: 'Balance',
       render: (rowData: any) => {
         return <span>{rowData.balance}</span>;
       },
     },
     {
-      title: "Year",
+      title: 'Year',
       render: (rowData: any) => {
         return <span>{rowData.year}</span>;
       },
     },
     {
-      title: "Class",
+      title: 'Class',
       render: (rowData: any) => {
         return <span>{rowData.class}</span>;
       },
     },
     {
-      title: "Status",
+      title: 'Status',
       render: () => {
         return (
           <>
@@ -51,18 +51,13 @@ export const tableConstants = () => {
       },
     },
     {
-      title: "Activity",
+      title: 'Activity',
       render: () => {
         return (
           <>
             <div className="flex px-3 py-4 whitespace-nowrap">
               <div className="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -72,12 +67,7 @@ export const tableConstants = () => {
                 </svg>
               </div>
               <div className="w-4 mr-2 transform hover:text-red-500 hover:scale-110">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -92,15 +82,11 @@ export const tableConstants = () => {
       },
     },
     {
-      title: "View",
+      title: 'View',
       render: () => {
         return (
           <>
-            <a
-              href="#"
-              className="px-2 py-2 text-gray-600 shadow hover:text-indigo-900 "
-              onClick={openModal}
-            >
+            <a href="#" className="px-2 py-2 text-gray-600 shadow hover:text-indigo-900 " onClick={openModal}>
               View more
             </a>
             <ViewStudent showModal={showModal} setShowModal={setShowModal} />

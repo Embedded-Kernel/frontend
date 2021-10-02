@@ -1,14 +1,14 @@
-import React, { Fragment, useState } from "react";
-import MetaData from "./MetaData";
-import { data } from "./TableComponents/mockData";
-import { tableConstants } from "./TableComponents/StudListConstants";
-import Table from "./TableComponents/Table";
-import SideBar from "./SideBar";
+import React, { Fragment } from 'react';
+import MetaData from './MetaData';
+import { data } from './TableComponents/mockData';
+import { tableConstants } from './TableComponents/StudListConstants';
+import Table from './TableComponents/Table';
+import SideBar from './SideBar';
 
 export default function StudentCardList() {
   return (
     <Fragment>
-      <MetaData title={"Students List"} />
+      <MetaData title={'Students List'} />
       <SideBar />
       <div className="overflow-hidden">
         <div className="min-w-screen  flex items-center justify-center overflow-hidden">
@@ -18,13 +18,7 @@ export default function StudentCardList() {
                 <h1 className="mt-2 uppercase font-sans">Student Cards</h1>
                 <span className="py-3 px-2 text-sm text-gray-300">120</span>
                 <div className="ml-auto items-right mt-auto flex">
-                  <svg
-                    width="24"
-                    height="23"
-                    viewBox="0 0 24 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="search_24px">
                       <path
                         id="icon/action/search_24px"
