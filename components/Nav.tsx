@@ -16,22 +16,22 @@ export function Nav() {
         </svg>
       </div>
       <ul className="flex items-center font-semibold space-x-4 text-secondary">
-        <li>
+        <li className="hidden md:block">
           <Link href="/about">
             <a>About us</a>
           </Link>
         </li>
-        <li>
+        <li className="hidden md:block">
           <Link href="partiners">
             <a>Our partners</a>
           </Link>
         </li>
-        <li>
+        <li className="hidden md:block">
           <Link href="why">
             <a>Why us</a>
           </Link>
         </li>
-        <li>
+        <li className="hidden md:block">
           <Link href="contact">
             <a>Contact us</a>
           </Link>
