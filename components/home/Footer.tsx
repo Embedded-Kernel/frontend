@@ -1,7 +1,9 @@
+import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from 'react-feather';
+
 export function Footer() {
   return (
-    <section className="bg-primary h-4/5">
-      <div>
+    <section className="bg-primary h-4/5 font-poppins text-white">
+      <div className="px-28 grid grid-cols-3 gap-12 py-20 place-items-center">
         <div>
           <svg width="69" height="30" viewBox="0 0 69 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -14,15 +16,57 @@ export function Footer() {
             />
           </svg>
 
-          <p>
+          <p className="py-4">
             Smart Student Card is a Product brought to you by Embedded Kernel, There to refine automation by software
             and hardware integration.
           </p>
         </div>
+
+        <div>
+          <p className="flex space-x-4 items-center mb-3">
+            <span>
+              <Phone />
+            </span>
+            <span>0788904567</span>
+          </p>
+          <p className="flex space-x-4 items-center mb-3">
+            <span>
+              <Mail />
+            </span>
+            <span>embkernel@gmail.com</span>
+          </p>
+          <p className="flex space-x-4 items-center">
+            <span>
+              <Linkedin />
+            </span>
+            <span>embeddedkernel</span>
+          </p>
+        </div>
+
+        <div>
+          <p className="flex space-x-4 items-center mb-3">
+            <span>
+              <Instagram />
+            </span>
+            <span>embeddedkernel_rw</span>
+          </p>
+          <p className="flex space-x-4 items-center mb-3">
+            <span>
+              <Facebook />
+            </span>
+            <span> embeddedkernel</span>
+          </p>
+          <p className="flex space-x-4 items-center">
+            <span>
+              <Twitter />
+            </span>
+            <span>embeddedkernel206</span>
+          </p>
+        </div>
       </div>
       <hr />
-      <div>
-        <p>All rights reserved &copy;2021 embedded kernel</p>
+      <div className="text-center">
+        <p className="py-4">All rights reserved &copy;2021 embedded kernel</p>
       </div>
     </section>
   );

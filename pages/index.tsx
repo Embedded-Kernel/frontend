@@ -7,8 +7,7 @@ import { Aboutus } from '../components/home/Aboutus';
 import { Partners } from '../components/home/Partners';
 import { Why } from '../components/home/Why';
 import { Contactus } from '../components/home/Contactus';
-
-/* import { Footer } from '../components/home/Footer'; */
+import { Footer } from '../components/home/Footer';
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
       <Partners />
       <Why />
       <Contactus />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
