@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export function Why() {
   return (
-    <section className="px-20 py-20 font-poppins flex justify-center items-center space-x-20">
-      <div>
+    <section className="px-20 py-20 font-poppins flex justify-center items-center gap-20">
+      <div className="hidden md:block lg:block">
         <Image src="/why.png" width={900} height={800} alt="Why section" />
       </div>
       <div>

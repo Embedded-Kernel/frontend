@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from 'react-feath
 export function Footer() {
   return (
     <section className="bg-primary h-4/5 font-poppins text-white">
-      <div className="px-28 grid grid-cols-3 gap-12 py-20 place-items-center">
+      <div className="md:px-28 lg:px-28 px-16 grid md:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-12 py-20 md:place-items-center lg:place-items-center">
         <div>
           <svg width="69" height="30" viewBox="0 0 69 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
