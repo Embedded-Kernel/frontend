@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from 'react-feather';
+import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -44,24 +45,31 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="flex space-x-4 items-center mb-3">
-            <span>
-              <Instagram />
-            </span>
-            <span>embeddedkernel_rw</span>
-          </p>
-          <p className="flex space-x-4 items-center mb-3">
-            <span>
-              <Facebook />
-            </span>
-            <span> embeddedkernel</span>
-          </p>
-          <p className="flex space-x-4 items-center">
-            <span>
-              <Twitter />
-            </span>
-            <span>embeddedkernel206</span>
-          </p>
+          <Link href="!#">
+            <a className="flex hover:cursor-pointer space-x-4 items-center mb-3">
+              <span>
+                <Instagram />
+              </span>
+              <span>embeddedkernel_rw</span>
+            </a>
+          </Link>
+          <Link href="!#">
+            <a className="flex cursor-pointer  space-x-4 items-center mb-3">
+              <span>
+                <Facebook />
+              </span>
+              <span> embeddedkernel</span>
+            </a>
+          </Link>
+
+          <Link href="!#">
+            <a className="flex cursor-pointer  space-x-4 items-center">
+              <span>
+                <Twitter />
+              </span>
+              <span>embeddedkernel206</span>
+            </a>
+          </Link>
         </div>
       </div>
       <hr />

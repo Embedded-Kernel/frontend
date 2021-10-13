@@ -1,5 +1,5 @@
-import Button from '../components/Layouts/Button';
-import HomeSidebar from '../components/Layouts/HomeSideBar';
+import Button from '../../components/Layouts/Button';
+import HomeSidebar from '../../components/Layouts/HomeSideBar';
 
 /* import Input from '../components/Layouts/Input'; */
 

@@ -36,8 +36,8 @@ export function Nav() {
             <a>Contact us</a>
           </Link>
         </li>
-        <li className="px-8 py-2 bg-primary rounded-md">
-          <Link href="login">
+        <li className="px-8 py-2 bg-primary hover:shadow-lg shadow-md cursor-pointer rounded-md">
+          <Link href="/auth/login">
             <a>Login</a>
           </Link>
         </li>

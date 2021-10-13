@@ -17,6 +17,7 @@ specifiers:
   react-dom: ^17.0.2
   react-feather: ^2.0.9
   react-icons: ^4.2.0
+  react-verification-code-input: ^1.2.9
   tailwindcss: ^2.2.16
   typescript: ^4.4.3
 
@@ -32,6 +33,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-feather: 2.0.9_react@17.0.2
   react-icons: 4.2.0_react@17.0.2
+  react-verification-code-input: 1.2.9_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
   '@types/node': 15.14.9
@@ -2919,6 +2921,18 @@ packages:
   /react-refresh/0.8.3:
     resolution: {integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /react-verification-code-input/1.2.9_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-Fg0B3SGGRoZtZFiQ/8FGSK5MQby9k5ssIUupPLvb8/U++Yxvc0T8ps/7CClLnvN+wowS5oL8xS7vqUTR9fRH6Q==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react/17.0.2:
