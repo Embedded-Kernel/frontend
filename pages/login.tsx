@@ -3,7 +3,8 @@ import HomeSidebar from "../components/Layouts/HomeSideBar";
 import Input from "../components/Layouts/Input";
 import TitleSsc from "../components/Layouts/TitleSsc";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+import Link from "next/link";
 
 const LoginPage = () => {
   return (
@@ -30,7 +31,10 @@ const LoginPage = () => {
               <p className="flex-end">Forgot your password?</p>
               <div>
                 <label className="inline-flex items-center">
-                  <input type="checkbox" className="h-4 w-4 checked:bg-yellow-600 " />
+                  <input
+                    type="checkbox"
+                    className="h-4 w-4 checked:bg-yellow-600 "
+                  />
                   <span className="ml-2">Remember me</span>
                 </label>
               </div>
@@ -41,7 +45,10 @@ const LoginPage = () => {
           </button>
           <p className="text-sm text-center mt-8">
             New to Ssc?{" "}
-            <span className="text-sm text-yellowColor font-bold">Sign Up</span>{" "}
+            <span className="text-sm text-yellowColor font-bold">
+              {" "}
+              <Link href="register">Sign up</Link>
+            </span>{" "}
           </p>
         </div>
       </div>
