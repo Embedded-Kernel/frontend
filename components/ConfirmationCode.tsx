@@ -1,40 +1,17 @@
 import React, { Fragment } from 'react';
-/* import ReactCodeInput from "react-verification-code-input"; */
+ import ReactCodeInput from "react-verification-code-input"; 
 import MetaData from './MetaData';
 
-export default function ConfirmCode() {
+export  function ConfirmCode() {
   return (
     <Fragment>
       <MetaData title={'Confirmation Code'} />
-      {/* <div className="w-full max-w-xs">
-  <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-    <div className="mb-4">
-      <label className="block text-gray-700 text-sm font-bold mb-2" >
-        Username
-      </label>
-      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"/>
-    </div>
-    <div className="mb-6">
-      <label className="block text-gray-700 text-sm font-bold mb-2" >
-        Password
-      </label>
-      <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************"/>
-      <p className="text-red-500 text-xs italic">Please choose a password.</p>
-    </div>
-    <div className="flex items-center justify-between">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-        Sign In
-      </button>
-      <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-        Forgot Password?
-      </a>
-    </div>
-  </form>
-</div> */}
-
-      <div className="overflow-hidden">
-        <div className="min-w-screen mt-24 flex items-center justify-center overflow-hidden space-y-4">
-          <svg
+    
+      <div className="min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8">
+		<div className="max-w-md w-full space-y-8">
+			<div className="">
+        <div className="flex items-center justify-center">
+        <svg
             className="block"
             width="69"
             height="30"
@@ -52,15 +29,21 @@ export default function ConfirmCode() {
             />
           </svg>
         </div>
-        <div className="flex block items-center justify-center mt-12">
-          <h1 className="text-4xl font-bold font-sans confirm">Confirmation Code</h1>
-          <p className="text-sm text-gray-400">
-            Please, before you continue creating account,enter the confirmation code from admin.
-          </p>
-
-          {/* <ReactCodeInput className="block" /> */}
-        </div>
-      </div>
+				<h2 className="mt-12 text-center text-4xl font-bold font-sans confirm">
+				Confirmation Code
+				</h2>
+				<p className="mt-6 text-center text-sm text-gray-400">
+        Please, before you continue creating account, enter the
+confirmation code from admin.
+				</p>
+        <ReactCodeInput className="block mt-9 ml-12" /> 
+			</div>
+		
+      
+			
+					</div>
+				</div>
+     
     </Fragment>
   );
 }

@@ -8,6 +8,8 @@ import { Partners } from '../components/home/Partners';
 import { Why } from '../components/home/Why';
 import { Contactus } from '../components/home/Contactus';
 import { Footer } from '../components/home/Footer';
+import { ConfirmCode } from '../components/ConfirmationCode';
+
 
 export default function Home() {
   return (
@@ -15,15 +17,16 @@ export default function Home() {
       <Head>
         <title>Embeded Kernel</title>
       </Head>
+      <ConfirmCode />
 
-      <Nav />
+      {/* <Nav />
       <Hero />
       <Card />
       <Aboutus />
       <Partners />
       <Why />
       <Contactus />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
