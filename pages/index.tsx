@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import StudentCardList from "../components/StudentCardList";
 import {TransactionsList} from "../components/TransactionsList";
+import LangingPage from "./landing";
+import LoginPage from "./login";
 import SignUpPage from "./register";
 
 export default function Home() {
@@ -9,7 +11,7 @@ export default function Home() {
       <main>
         {/* <SideBar /> */}
         {/* <StudentCardList /> */}
-     <TransactionsList/> 
+     <LangingPage/> 
         {/* <SignUpPage/> */}
       </main>
     </Fragment>
