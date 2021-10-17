@@ -37,11 +37,15 @@ export  function ConfirmCode() {
 confirmation code from admin.
 				</p>
         <ReactCodeInput className="block mt-9 ml-12" /> 
+        <div className="mt-9 ml-28">
+        <button type="submit" className="py-2 px-24 border border-transparent text-medium font-medium rounded-md text-white bg-indigo-900 ">
+						Sign in
+					</button> 
+        </div>
+        
 			</div>
-		
-      
-			
 					</div>
+         
 				</div>
      
     </Fragment>
