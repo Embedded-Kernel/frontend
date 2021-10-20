@@ -1,13 +1,16 @@
 import Link from "next/link";
 import Modal from "./Modal";
-import React, { useContext, useEffect, useState } from "react";
-import { ModalContext } from "./state-management/ContextProvider";
+import React, { useContext, useEffect } from "react";
+import {
+  IModalContext,
+  ModalContext,
+} from "./state-management/ContextProvider";
 import LoginPage from "./Login";
 export function Nav() {
-  const { modalState, setModalState }: any = useContext(ModalContext);
+  const { modalState, setModalState }: IModalContext = useContext(ModalContext);
   useEffect(() => {
-    setModalState(modalState);
-  }, [modalState]);
+    setModalState && setModalState(modalState || false);
+  }, [modalState, setModalState]);
   return (
     <div>
       <nav className="flex font-poppins justify-between block py-4 px-8">
@@ -52,13 +55,13 @@ export function Nav() {
           </li>
           <li className="px-8 py-2 bg-primary rounded-md">
             <Link href="#">
-              <a onClick={() => setModalState(true)}>Login</a>
+              <a onClick={() => setModalState && setModalState(true)}>Login</a>
             </Link>
           </li>
         </ul>
       </nav>
       <Modal>
-        <LoginPage />{" "}
+        <LoginPage />
       </Modal>
     </div>
   );

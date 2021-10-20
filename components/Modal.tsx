@@ -1,11 +1,18 @@
 import React, { useState, ReactNode, useContext } from "react";
 import TitleSsc from "./Layouts/TitleSsc";
-import Login from "./Login";
-import { ModalContext } from "./state-management/ContextProvider";
+import {
+  IModalContext,
+  ModalContext,
+} from "./state-management/ContextProvider";
 import Image from "next/image";
 
-export default function Modal(children: ReactNode) {
-  const { modalState, setModalState }: any = useContext(ModalContext);
+type Props = {
+  children?: ReactNode;
+};
+
+export default function Modal(props: Props) {
+  const { modalState, setModalState, setShowSignIn }: IModalContext =
+    useContext(ModalContext);
   return (
     <>
       {modalState ? (
@@ -14,7 +21,13 @@ export default function Modal(children: ReactNode) {
             <div className="w-5/5 my-6 mx-auto max-w-3xl md:w-2/5">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="absolute -top-3 -right-3 cursor-pointer" onClick={() => setModalState(false)}>
+                <div
+                  className="absolute -top-3 -right-3 cursor-pointer"
+                  onClick={() => {
+                    setModalState && setModalState(false),
+                      setShowSignIn && setShowSignIn(true);
+                  }}
+                >
                   <Image
                     src="/assets/images/close-image.svg"
                     width={30}
@@ -27,9 +40,7 @@ export default function Modal(children: ReactNode) {
                   <TitleSsc />
                 </div>
                 {/*body*/}
-                <div className="relative flex-auto">
-                  {children}
-                </div>
+                <div className="relative flex-auto">{props.children}</div>
               </div>
             </div>
           </div>
