@@ -8,6 +8,7 @@ module.exports = {
         primary: "#2F2E41",
         secondary: "#FFC700",
         sideBarColor: "#2D2D2F",
+        grayBg: "#9C9C9C",
         lightDark: "#E5E5E5",
       },
       fontFamily: {

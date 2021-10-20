@@ -35,9 +35,32 @@ const SignUpPage = () => {
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Gender"} />
                   </div>
-                  <p className="text-yellowColor font-bold">Gender</p>
+                  {/* <p className="text-yellowColor font-bold">Gender</p>
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Email address"} />
+                  </div> */}
+                  <div className="">
+                    <span className="text-gray-700">Account Type</span>
+                    <div className="mt-2">
+                      <label className="inline-flex items-center">
+                        <input
+                          type="radio"
+                          className="form-radio border border-gray-300"
+                          name="accountType"
+                          value="personal"
+                        />
+                        <span className="ml-2">Personal</span>
+                      </label>
+                      <label className="inline-flex items-center ml-6">
+                        <input
+                          type="radio"
+                          className="form-radio border border-gray-300"
+                          name="accountType"
+                          value="busines"
+                        />
+                        <span className="ml-2">Business</span>
+                      </label>
+                    </div>
                   </div>
                   <p className="text-yellowColor font-bold">Password</p>
                   <div className="flex gap-x-4">
@@ -54,10 +77,21 @@ const SignUpPage = () => {
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Username"} />
                   </div>
-                  <p className="text-yellowColor font-bold">Role</p>
+                  <div>
+                    <label className="block mt-4">
+                      <span className="text-gray-700">Requested Limit</span>
+                      <select className="form-select border border-gray-300 mt-1 block w-full">
+                        <option>$1,000</option>
+                        <option>$5,000</option>
+                        <option>$10,000</option>
+                        <option>$25,000</option>
+                      </select>
+                    </label>
+                  </div>
+                  {/* <p className="text-yellowColor font-bold">Role</p>
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Role"} />
-                  </div>
+                  </div> */}
                   <p className="text-yellowColor font-bold">Confirm password</p>
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Confirm password"} />
