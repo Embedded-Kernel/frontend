@@ -8,6 +8,7 @@ import Image from "next/image";
 
 type Props = {
   children?: ReactNode;
+  modalSize?: string;
 };
 
 export default function Modal(props: Props) {

@@ -19,9 +19,11 @@ const SignUpPage = () => {
       {showSignUp ? (
         <div className="container grid grid-cols-12 font-sm font-poppins">
           <div className="col-span-12 md:col-span-12 md:col-span-8 lg:col-span-12 flex justify-items-center justify-center">
-            <div className="m-0 w-full flex flex-col col-span-12 lg:w-5/5 mr-5 ml-5  animated fadeIn faster p-2 items-center">
+            <div className="m-0 w-full flex flex-col col-span-12 lg:w-4/5 mr-5 ml-5  animated fadeIn faster p-2 items-center">
               <p className="text-xl font-bold mb-2">Register your school</p>
-              <p className="text-sm text-gray">STEP 1</p>
+              <p className="text-sm text-gray">
+                Enter your account details here below
+              </p>
               <div className="flex-row md:flex gap-x-6 flex-row mt-4 text-sm w-full flex-start">
                 <div className="w-full flex flex-col gap-y-1 md:w-2/4 lg:gap-y-3">
                   <p className="text-yellowColor font-bold">First name</p>
@@ -31,36 +33,32 @@ const SignUpPage = () => {
                       placeholder={"Enter your first name"}
                     />
                   </div>
-                  <p className="text-yellowColor font-bold">Gender</p>
+                  <p className="text-yellowColor font-bold">Username</p>
                   <div className="flex gap-x-4">
-                    <Input type={"text"} placeholder={"Gender"} />
+                    <Input type={"text"} placeholder={"Enter your username"} />
                   </div>
-                  {/* <p className="text-yellowColor font-bold">Gender</p>
-                  <div className="flex gap-x-4">
-                    <Input type={"text"} placeholder={"Email address"} />
-                  </div> */}
-                  <div className="">
-                    <span className="text-gray-700">Account Type</span>
-                    <div className="mt-2">
-                      <label className="inline-flex items-center">
-                        <input
-                          type="radio"
-                          className="form-radio border border-gray-300"
-                          name="accountType"
-                          value="personal"
-                        />
-                        <span className="ml-2">Personal</span>
-                      </label>
-                      <label className="inline-flex items-center ml-6">
-                        <input
-                          type="radio"
-                          className="form-radio border border-gray-300"
-                          name="accountType"
-                          value="busines"
-                        />
-                        <span className="ml-2">Business</span>
-                      </label>
-                    </div>
+                  <span className="text-yellowColor font-bold">
+                    Account Type
+                  </span>
+                  <div className="mt-2">
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        className="form-radio border border-gray-300"
+                        name="accountType"
+                        value="personal"
+                      />
+                      <span className="ml-2">Female</span>
+                    </label>
+                    <label className="inline-flex items-center ml-6">
+                      <input
+                        type="radio"
+                        className="form-radio border border-gray-300"
+                        name="accountType"
+                        value="busines"
+                      />
+                      <span className="ml-2">Male</span>
+                    </label>
                   </div>
                   <p className="text-yellowColor font-bold">Password</p>
                   <div className="flex gap-x-4">
@@ -73,25 +71,19 @@ const SignUpPage = () => {
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Last name"} />
                   </div>
-                  <p className="text-yellowColor font-bold">User name</p>
+                  <p className="text-yellowColor font-bold">Email address</p>
                   <div className="flex gap-x-4">
-                    <Input type={"text"} placeholder={"Username"} />
+                    <Input type={"email"} placeholder={"Username"} />
                   </div>
-                  <div>
-                    <label className="block mt-4">
-                      <span className="text-gray-700">Requested Limit</span>
-                      <select className="form-select border border-gray-300 mt-1 block w-full">
-                        <option>$1,000</option>
-                        <option>$5,000</option>
-                        <option>$10,000</option>
-                        <option>$25,000</option>
-                      </select>
-                    </label>
-                  </div>
-                  {/* <p className="text-yellowColor font-bold">Role</p>
-                  <div className="flex gap-x-4">
-                    <Input type={"text"} placeholder={"Role"} />
-                  </div> */}
+                  <label className="block">
+                    <span className="text-yellowColor font-bold">Role</span>
+                    <select className="form-select border border-gray-300 mt-1 block w-full">
+                      <option>Patron</option>
+                      <option>Matron</option>
+                      <option>Student</option>
+                      <option>..</option>
+                    </select>
+                  </label>
                   <p className="text-yellowColor font-bold">Confirm password</p>
                   <div className="flex gap-x-4">
                     <Input type={"text"} placeholder={"Confirm password"} />
