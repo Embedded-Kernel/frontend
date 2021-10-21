@@ -9,6 +9,7 @@ module.exports = {
         secondary: '#FFC700',
         sideBarColor: '#2D2D2F',
         lightDark: '#E5E5E5',
+        dash: '#ECECF8',
       },
       fontFamily: {
         sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
@@ -18,6 +19,7 @@ module.exports = {
         primary: '#2F2E41',
         secondary: '#FFC700',
         light: '#9C9C9C',
+        searchColor: '#A3A3A3',
       },
     },
   },

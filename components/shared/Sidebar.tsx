@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CreditCard, Users } from 'react-feather';
+import { CreditCard, XSquare, Settings, Users, Grid } from 'react-feather';
 
 export default function SideBar() {
   return (
@@ -18,26 +18,34 @@ export default function SideBar() {
           </svg>
         </div>
 
-        <div className="mt-60 flex justify-between flex-col space-y-4 text-white font-poppins px-4">
+        <div className="mt-56 flex justify-between flex-col space-y-6 text-white font-poppins px-4">
           <Link href="!#">
-            <a> Overview</a>
+            <a className="flex gap-2 hover:text-secondary items-center">
+              <Grid />
+              Overview
+            </a>
           </Link>
           <Link href="!#">
-            <a>
+            <a className="flex gap-2 hover:text-secondary items-center">
               <CreditCard /> Cards
             </a>
           </Link>
           <Link href="!#">
-            <a>
-              {' '}
+            <a className="flex gap-2 hover:text-secondary items-center">
               <Users /> Students
             </a>
           </Link>
           <Link href="!#">
-            <a>Register</a>
+            <a className="flex gap-2 hover:text-secondary items-center">
+              <XSquare />
+              Register
+            </a>
           </Link>
           <Link href="!#">
-            <a>Settings</a>
+            <a className="flex gap-2 hover:text-secondary items-center">
+              <Settings />
+              Settings
+            </a>
           </Link>
         </div>
 
