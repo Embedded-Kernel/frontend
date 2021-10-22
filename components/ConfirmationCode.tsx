@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
  import ReactCodeInput from "react-verification-code-input"; 
+//  import OtpInput from 'react-otp-input';
 import MetaData from './MetaData';
 
 export  function ConfirmCode() {
   return (
+
     <Fragment>
       <MetaData title={'Confirmation Code'} />
-    
+    <form className="w-64 md:w-full md:justify-center">
       <div className="min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8">
 		<div className="max-w-md w-full space-y-8">
 			<div className="">
@@ -36,7 +38,7 @@ export  function ConfirmCode() {
         Please, before you continue creating account, enter the
 confirmation code from admin.
 				</p>
-        <ReactCodeInput className="block mt-9 ml-12" /> 
+        <ReactCodeInput className="block mt-9 ml-12"  /> 
         <div className="mt-9 ml-28">
         <button type="submit" className="py-2 px-24 border border-transparent text-medium font-medium rounded-md text-white bg-indigo-900 ">
 						Sign in
@@ -47,7 +49,9 @@ confirmation code from admin.
 					</div>
          
 				</div>
+        </form>
      
     </Fragment>
   );
 }
+
