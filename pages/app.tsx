@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import DashboardLayout from '../components/layouts/DashboardLayout';
 
 export default function App() {
   return (
@@ -6,9 +7,11 @@ export default function App() {
       <Head>
         <title>application</title>
       </Head>
-      <div>
-        <h1>Dashboard will go here</h1>
-      </div>
+      <DashboardLayout>
+        <div>
+          <h3 className="font-black text-primary text-4xl">Overview</h3>
+        </div>
+      </DashboardLayout>
     </>
   );
 }

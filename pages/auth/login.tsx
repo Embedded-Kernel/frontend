@@ -1,10 +1,9 @@
-import Button from "../components/Layouts/Button";
-import HomeSidebar from "../components/Layouts/HomeSideBar";
-import Input from "../components/Layouts/Input";
-import TitleSsc from "../components/Layouts/TitleSsc";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 import Link from "next/link";
+import HomeSidebar from "../../components/Layouts/HomeSideBar";
+import { Input } from "@material-ui/core";
+import TitleSsc from "../../components/Layouts/TitleSsc";
 
 const LoginPage = () => {
   return (

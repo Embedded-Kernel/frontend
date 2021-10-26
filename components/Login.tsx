@@ -1,12 +1,12 @@
 import Input from "../components/Layouts/Input";
 import React, { useContext, useState } from "react";
 import Link from "next/link";
-import SignUpPage from "../pages/register";
 import {
   IModalContext,
   ModalContext,
 } from "./state-management/ContextProvider";
 import { useEffect } from "react";
+import SignUpPage from "../pages/auth/register";
 
 const LoginPage = () => {
   const {

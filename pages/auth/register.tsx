@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { useContext, useState } from "react";
-import Input from "../components/Layouts/Input";
-import LoginPage from "../components/Login";
 import {
   IModalContext,
   ModalContext,
-} from "../components/state-management/ContextProvider";
+} from "../../components/state-management/ContextProvider";
+import Input from "../../components/Layouts/Input";
+import LoginPage from "./login";
 
 const SignUpPage = () => {
   const {
