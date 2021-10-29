@@ -19,7 +19,7 @@ return (
                 <div className="block bg-white py-3  border-t">
                     <div className="border-t">
                         <div className="px-4 py-2 flex  mt-4  space-x-8 justify-between">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" defaultChecked />
                             <span className="text-sm font-semibold  text-gray-900">EE456789001</span>
                             <a href="#"> <span className="text-sm font-semibold text-blue-600">Activate</span></a>
                             <span className="text-sm font-semibold text-gray-600">...</span>
@@ -30,7 +30,7 @@ return (
                 </div>
                 <div className="block bg-white py-3 border-t">
                     <div className="px-4 py-2 flex   space-x-8 justify-between">
-                        <input type="checkbox" checked />
+                        <input type="checkbox" defaultChecked />
                         <span className="text-sm font-semibold text-gray-900">EE456789001</span>
                         <a href="#"> <span className="text-sm font-semibold text-blue-600">Activate</span></a>
                         <span className="text-sm font-semibold text-gray-600">...</span>
