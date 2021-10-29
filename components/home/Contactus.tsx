@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function Contactus() {
   return (
     <section className="bg-lightDark font-poppins py-12">
-      <h2 className="text-center py-4 font-bold font-poppins text-4xl py-8">Contact us!</h2>
+      <h2 className="text-center font-bold font-poppins text-4xl py-8">Contact us!</h2>
       <section className="flex px-4 gap-12 items-center">
         <div className="hidden md:block lg:block px-16">
           <Image src="/contact.png" width={600} height={400} alt="images goes here" />
