@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import "./style.css"
 export const NewTransaction = ({ showModal, setShowModal }: any) => {
   return (
@@ -16,7 +16,13 @@ export const NewTransaction = ({ showModal, setShowModal }: any) => {
                 <div>
                   <div className="md:flex md:items-center  mt-8">
                     <div className="pr-4">
-                      <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -36,7 +42,13 @@ export const NewTransaction = ({ showModal, setShowModal }: any) => {
                   </div>
                   <div className="md:flex md:items-center  mt-8 mb-6">
                     <div className="pr-4">
-                      <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -56,7 +68,13 @@ export const NewTransaction = ({ showModal, setShowModal }: any) => {
                   </div>
                   <div className="md:flex md:items-center  mt-8 mb-6">
                     <div className="pr-4">
-                      <svg width="20" height="20" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 18 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <g id="input_24px">
                           <g id="Group 54">
                             <g id="Group 53">

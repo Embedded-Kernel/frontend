@@ -1,6 +1,6 @@
 /* Admin Sidebar */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .sidebar {
   float: left;
@@ -13,7 +13,6 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
 
 /* nav a:hover { */
 /*   color: #ebd614; */
@@ -37,6 +36,6 @@ div.students {
   float: right;
 }
 
-h1.confirm{
-  color: #2F2E41;
+h1.confirm {
+  color: #2f2e41;
 }

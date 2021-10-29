@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface Props {
   className: string;
@@ -6,7 +6,13 @@ interface Props {
   type: string;
 }
 
-const Input = ({ props, ref }: { props: Props; ref: React.RefObject<HTMLInputElement> }) => {
+const Input = ({
+  props,
+  ref,
+}: {
+  props: Props;
+  ref: React.RefObject<HTMLInputElement>;
+}) => {
   return (
     <input
       className={`border-b-2 w-full border-yellow-200 outline-none ${props.className}`}

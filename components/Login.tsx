@@ -1,10 +1,16 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export function Login() {
   return (
     <section className="flex flex-col justify-center px-12 py-10 shadow-md font-poppins">
       <div className="flex justify-center">
-        <svg width="52" height="23" viewBox="0 0 52 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="52"
+          height="23"
+          viewBox="0 0 52 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M8.8052 22.21C7.2652 22.21 5.8852 21.96 4.6652 21.46C3.4452 20.96 2.4652 20.22 1.7252 19.24C1.0052 18.26 0.625195 17.08 0.585195 15.7H6.0452C6.1252 16.48 6.3952 17.08 6.8552 17.5C7.3152 17.9 7.9152 18.1 8.6552 18.1C9.4152 18.1 10.0152 17.93 10.4552 17.59C10.8952 17.23 11.1152 16.74 11.1152 16.12C11.1152 15.6 10.9352 15.17 10.5752 14.83C10.2352 14.49 9.8052 14.21 9.2852 13.99C8.7852 13.77 8.0652 13.52 7.1252 13.24C5.7652 12.82 4.6552 12.4 3.7952 11.98C2.9352 11.56 2.1952 10.94 1.5752 10.12C0.955195 9.3 0.645195 8.23 0.645195 6.91C0.645195 4.95 1.3552 3.42 2.7752 2.32C4.1952 1.2 6.0452 0.64 8.3252 0.64C10.6452 0.64 12.5152 1.2 13.9352 2.32C15.3552 3.42 16.1152 4.96 16.2152 6.94H10.6652C10.6252 6.26 10.3752 5.73 9.9152 5.35C9.4552 4.95 8.8652 4.75 8.1452 4.75C7.5252 4.75 7.0252 4.92 6.6452 5.26C6.2652 5.58 6.0752 6.05 6.0752 6.67C6.0752 7.35 6.3952 7.88 7.0352 8.26C7.6752 8.64 8.6752 9.05 10.0352 9.49C11.3952 9.95 12.4952 10.39 13.3352 10.81C14.1952 11.23 14.9352 11.84 15.5552 12.64C16.1752 13.44 16.4852 14.47 16.4852 15.73C16.4852 16.93 16.1752 18.02 15.5552 19C14.9552 19.98 14.0752 20.76 12.9152 21.34C11.7552 21.92 10.3852 22.21 8.8052 22.21ZM35.3507 13.63C35.3507 11.89 35.7007 10.37 36.4007 9.07C37.1207 7.77 38.1107 6.77 39.3707 6.07C40.6507 5.37 42.1107 5.02 43.7507 5.02C45.8507 5.02 47.6007 5.57 49.0007 6.67C50.4207 7.77 51.3507 9.32 51.7907 11.32H46.3307C45.8707 10.04 44.9807 9.4 43.6607 9.4C42.7207 9.4 41.9707 9.77 41.4107 10.51C40.8507 11.23 40.5707 12.27 40.5707 13.63C40.5707 14.99 40.8507 16.04 41.4107 16.78C41.9707 17.5 42.7207 17.86 43.6607 17.86C44.9807 17.86 45.8707 17.22 46.3307 15.94H51.7907C51.3507 17.9 50.4207 19.44 49.0007 20.56C47.5807 21.68 45.8307 22.24 43.7507 22.24C42.1107 22.24 40.6507 21.89 39.3707 21.19C38.1107 20.49 37.1207 19.49 36.4007 18.19C35.7007 16.89 35.3507 15.37 35.3507 13.63Z"
             fill="black"
@@ -18,14 +24,16 @@ export function Login() {
 
       <div className="py-12 text-center">
         <h3 className="font-extrabold">Welcome back!</h3>
-        <p className="font-light text-light">Enter your login details here below</p>
+        <p className="font-light text-light">
+          Enter your login details here below
+        </p>
       </div>
 
       <form>
         <div className="flex flex-col mb-4 font-bold space-y-2">
           <label htmlFor="emailInput" className="text-secondary">
-            {' '}
-            username or password{' '}
+            {" "}
+            username or password{" "}
           </label>
           <input
             type="email"
@@ -36,7 +44,7 @@ export function Login() {
         </div>
         <div className="flex flex-col mb-4 font-bold  w-full">
           <label htmlFor="passwordInput" className="text-secondary">
-            Password{' '}
+            Password{" "}
           </label>
           <input
             type="password"
@@ -57,7 +65,7 @@ export function Login() {
         />
       </form>
       <div className="text-center py-4 font-poppins">
-        New to Scs? {'  '}
+        New to Scs? {"  "}
         <Link href="Register">
           <a className="text-secondary">Register</a>
         </Link>

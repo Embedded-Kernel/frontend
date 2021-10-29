@@ -1,9 +1,9 @@
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Dropdown() {
@@ -14,7 +14,10 @@ export default function Dropdown() {
           <div>
             <Menu.Button className="inline-flex bg-sideBarColor justify-center w-full  rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-white  focus:outline-none">
               Export as CSV
-              <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+              <ChevronDownIcon
+                className="-mr-1 ml-2 h-5 w-5"
+                aria-hidden="true"
+              />
             </Menu.Button>
           </div>
 
@@ -34,12 +37,12 @@ export default function Dropdown() {
             >
               <div className="py-1">
                 <Menu.Item>
-                  {({ active } :any) => (
+                  {({ active }: any) => (
                     <a
                       href="#"
                       className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
                       )}
                     >
                       PDF
@@ -47,12 +50,12 @@ export default function Dropdown() {
                   )}
                 </Menu.Item>
                 <Menu.Item>
-                  {({ active }:any) => (
+                  {({ active }: any) => (
                     <a
                       href="#"
                       className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
                       )}
                     >
                       DOCX
@@ -60,12 +63,12 @@ export default function Dropdown() {
                   )}
                 </Menu.Item>
                 <Menu.Item>
-                  {({ active } :any) => (
+                  {({ active }: any) => (
                     <a
                       href="#"
                       className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'block px-4 py-2 text-sm'
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "block px-4 py-2 text-sm"
                       )}
                     >
                       PDF
@@ -74,15 +77,17 @@ export default function Dropdown() {
                 </Menu.Item>
                 <form method="POST" action="#">
                   <Menu.Item>
-                    {({ active }:any) => (
+                    {({ active }: any) => (
                       <a
                         href="#"
                         className={classNames(
-                          active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                          'block  px-4 py-2 text-sm'
+                          active
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block  px-4 py-2 text-sm"
                         )}
                       >
-                       DOCX
+                        DOCX
                       </a>
                     )}
                   </Menu.Item>
@@ -93,6 +98,5 @@ export default function Dropdown() {
         </>
       )}
     </Menu>
-  )
+  );
 }
-

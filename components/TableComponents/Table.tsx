@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Table = ({ cols, data }: { cols: JSX.Element[]; data: any }) => {
   return (
@@ -6,7 +6,11 @@ const Table = ({ cols, data }: { cols: JSX.Element[]; data: any }) => {
       <thead className="bg-gray-100">
         <tr>
           {cols.map((headerItem: any, index: any) => (
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase" key={index}>
+            <th
+              scope="col"
+              className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
+              key={index}
+            >
               {headerItem.title}
             </th>
           ))}
@@ -28,4 +32,3 @@ const Table = ({ cols, data }: { cols: JSX.Element[]; data: any }) => {
 };
 
 export default Table;
-
