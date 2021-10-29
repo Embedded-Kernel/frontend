@@ -21,6 +21,10 @@ module.exports = {
         light: '#9C9C9C',
         searchColor: '#A3A3A3',
       },
+      borderColor: theme =>({
+        ...theme('colors'),
+        'primary': '#DADADA'
+      })
     },
   },
   variants: {

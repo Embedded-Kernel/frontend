@@ -15,7 +15,7 @@ export function Nav() {
           />
         </svg>
       </div>
-      <ul className="flex items-center font-semibold space-x-4 text-secondary">
+      <ul className="flex items-center font-semibold  space-x-4 text-secondary">
         <li className="hidden md:block">
           <Link href="/about">
             <a>About us</a>
@@ -36,10 +36,15 @@ export function Nav() {
             <a>Contact us</a>
           </Link>
         </li>
-        <li className="px-8 py-2 bg-primary hover:shadow-lg shadow-md cursor-pointer rounded-md">
+        <li className="px-8 hidden md:block py-2 bg-primary hover:shadow-lg shadow-md cursor-pointer rounded-md">
           <Link href="/auth/login">
             <a>Login</a>
           </Link>
+        </li>
+        <li className="block md:hidden lg:hidden text-5xl text-black cursor-pointer hover:text-secondary">
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+  <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+</svg>
         </li>
       </ul>
     </nav>

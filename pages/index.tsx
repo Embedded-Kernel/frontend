@@ -18,7 +18,6 @@ export default function Home() {
       <Head>
         <title>Embeded Kernel</title>
       </Head>
-{/* <InactiveCardsSidebar/> */}
 
       <Nav />
       <Hero />
