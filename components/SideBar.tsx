@@ -1,14 +1,21 @@
-import React from 'react';
-import { RiAccountBoxLine, RiArrowLeftRightFill, RiDashboardLine } from 'react-icons/ri';
-import { MdContactMail, MdTimeline } from 'react-icons/md';
-import { AiOutlineCreditCard } from 'react-icons/ai';
-import Link from 'next/link';
+import React from "react";
+import {
+  RiAccountBoxLine,
+  RiArrowLeftRightFill,
+  RiDashboardLine,
+} from "react-icons/ri";
+import { MdContactMail, MdTimeline } from "react-icons/md";
+import { AiOutlineCreditCard } from "react-icons/ai";
+import Link from "next/link";
 
 const SideBar = () => {
   return (
     <div className="relative">
       <div className="sidebar text-blue-100 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-        <a href="/dashboard" className="mt-5 text-white flex items-center space-x-2 px-10">
+        <a
+          href="/dashboard"
+          className="mt-5 text-white flex items-center space-x-2 px-10"
+        >
           <span className="text-2xl font-extrabold">Smart SC</span>
         </a>
         <nav>

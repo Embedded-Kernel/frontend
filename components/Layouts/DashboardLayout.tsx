@@ -1,8 +1,12 @@
-import SideBar from '../shared/Sidebar';
-import { Bell } from 'react-feather';
-import Image from 'next/image';
+import SideBar from "../shared/Sidebar";
+import { Bell } from "react-feather";
+import Image from "next/image";
 
-export default function DashboardLayout({ children }: { children: JSX.Element }) {
+export default function DashboardLayout({
+  children,
+}: {
+  children: JSX.Element;
+}) {
   return (
     <section className="relative flex min-h-screen font-poppins">
       <SideBar />

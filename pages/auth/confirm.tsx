@@ -1,5 +1,5 @@
-import { ConfirmCode } from '../../components/ConfirmationCode';
-import Head from 'next/head';
+import { ConfirmCode } from "../../components/ConfirmationCode";
+import Head from "next/head";
 
 export default function confirm() {
   return (

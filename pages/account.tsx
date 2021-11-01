@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import SideBar from '../components/SideBar';
+import React from "react";
+import Image from "next/image";
+import SideBar from "../components/SideBar";
 
 const accountInfoPage = () => {
   return (
@@ -16,7 +16,12 @@ const accountInfoPage = () => {
           <div className="h-28 ">
             <p className="font-bold mb-2">Avatar</p>
             <div className="flex gap-x-3">
-              <Image src="/assets/images/profile.png" alt="profile icon" width={40} height={40} />
+              <Image
+                src="/assets/images/profile.png"
+                alt="profile icon"
+                width={40}
+                height={40}
+              />
               <button className="border-2 p-1 w-28 shadow-sm">Change</button>
               <button className="border-2 p-1 w-28 shadow-sm">Remove</button>
             </div>
@@ -26,7 +31,10 @@ const accountInfoPage = () => {
             <div className="flex w-full gap-x-32">
               <div className="flex w-2/4 flex-col">
                 <label htmlFor="">First name</label>
-                <input type="text" className="p-2 border-2 focus:border-yellow-400 focus:outline-none shadow-sm" />
+                <input
+                  type="text"
+                  className="p-2 border-2 focus:border-yellow-400 focus:outline-none shadow-sm"
+                />
               </div>
               <div className="flex w-2/4 flex-col">
                 <label htmlFor="">Last name</label>
@@ -57,7 +65,9 @@ const accountInfoPage = () => {
           <div className="h-20 flex w-full">
             <div className="flex-col w-2/4">
               <p className="font-bold">Delete your account</p>
-              <p className="text-gray-400">By deleting this account you will loose all your data</p>
+              <p className="text-gray-400">
+                By deleting this account you will loose all your data
+              </p>
             </div>
             <div className="flex-col w-2/4">
               <button className="border-2 border-red-200 p-1 w-32 shadow-md float-right hover:bg-red-500 hover:border-0 hover:text-white focus:outline-none hover:outline-none">
@@ -66,7 +76,9 @@ const accountInfoPage = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <button className="bg-sideBarColor border-1 text-white shadow-lg p-2 w-32">Save changes</button>
+            <button className="bg-sideBarColor border-1 text-white shadow-lg p-2 w-32">
+              Save changes
+            </button>
           </div>
         </div>
       </div>

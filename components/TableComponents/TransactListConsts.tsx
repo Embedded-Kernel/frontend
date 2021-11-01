@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ViewStudent } from "../modals/ViewStudent";
 
 export const tableTConstants = () => {
-
   return [
     {
       title: "Names",
@@ -36,12 +35,10 @@ export const tableTConstants = () => {
       },
     },
     {
-        title: "Date",
-        render: (rowData: any) => {
-          return <span>{rowData.date}</span>;
-        },
+      title: "Date",
+      render: (rowData: any) => {
+        return <span>{rowData.date}</span>;
       },
-    
-   
+    },
   ];
 };
