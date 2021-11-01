@@ -38,9 +38,9 @@ export default function StudentCardList() {
                 </div>
               </div>
 
-              {/* <div className="bg-white rounded my-6 mt-3"> */}
-              {/*   <Table cols={<TableConstants />} data={data} /> */}
-              {/* </div> */}
+               {/* <div className="bg-white rounded my-6 mt-3">
+                 <Table cols={TableConstants} data={data} /> 
+               </div>  */}
             </div>
           </div>
         </div>
